@@ -8,7 +8,7 @@ import { LandingPage } from '@pages/Landing';
 import { NotFoundPage } from '@pages/NotFound';
 import { Layout } from '@layout/index';
 
-const staticServerUri = import.meta.env.VITE_REACT_APP_PATH || '';
+const staticServerUri = '/kcb7af3d2b823a'
 
 function App() {
   console.log('staticServerUri:', staticServerUri);
