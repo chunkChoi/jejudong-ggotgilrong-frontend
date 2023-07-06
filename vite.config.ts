@@ -10,7 +10,7 @@ export default defineConfig({
   //         baseAssets: 'https://user-app.krampoline.com/kcb7af3d2b823a/'
   //     })
   // ],
-plugins: [react()],
+plugins: [tsconfigPaths()],
 	build: {
     rollupOptions: {
       output: {
