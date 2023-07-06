@@ -21,8 +21,8 @@ plugins: [tsconfigPaths()],
           }
           return `assets/${extType}/[name]-[hash][extname]`;
         },
-        chunkFileNames: 'assets/kcb7af3d2b823a/[name]-[hash].js',
-        entryFileNames: 'assets/kcb7af3d2b823a/[name]-[hash].js',
+        chunkFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
+        entryFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
       },
     },
   },
