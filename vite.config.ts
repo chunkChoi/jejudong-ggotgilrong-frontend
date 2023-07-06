@@ -17,6 +17,7 @@ export default defineConfig({
         },
         chunkFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
+		assetFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js'
       },
     },
   },
