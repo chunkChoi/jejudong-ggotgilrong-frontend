@@ -4,28 +4,9 @@ import { ssr } from 'vite-plugin-ssr/plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // plugins: [
-  //     tsconfigPaths(),
-  //     ssr({
-  //         baseAssets: 'https://user-app.krampoline.com/kcb7af3d2b823a/'
-  //     })
-  // ],
-plugins: [tsconfigPaths()],
-	build: {
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          let extType = assetInfo.name.split('.').at(1);
-          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
-            extType = 'img';
-          }
-          return `assets/${extType}/[name]-[hash][extname]`;
-        },
-        chunkFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
-        entryFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
-      },
-    },
-  },
+  plugins: [
+      tsconfigPaths()
+  ],
   server: {
     port: 3000,
   },
