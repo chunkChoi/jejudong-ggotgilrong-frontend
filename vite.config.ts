@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
       tsconfigPaths(),
       ssr({
-          baseAssets: 'https://user-app.krampoline.com/k92ebc3e719eda/'
+          baseAssets: 'https://user-app.krampoline.com/kcb7af3d2b823a/'
       })
   ],
   server: {
