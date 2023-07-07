@@ -13,9 +13,9 @@ export default defineConfig({
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
             extType = 'img';
           }
-          return `kcb7af3d2b823aassets/${extType}/[name]-[hash][extname]`;
+          return `kcb7af3d2b823a/assets/${extType}/[name]-[hash][extname]`;
         },
-        chunkFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
+        chunkFileNames: '../kcb7af3d2b823a/assets/[name]-[hash].js',
         entryFileNames: 'kcb7af3d2b823a/assets/[name]-[hash].js',
       },
     },
