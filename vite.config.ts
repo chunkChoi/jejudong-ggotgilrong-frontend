@@ -4,7 +4,6 @@ import { ssr } from 'vite-plugin-ssr/plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/kcb7af3d2b823a",
   plugins: [tsconfigPaths()],
 	build: {
     rollupOptions: {
@@ -14,10 +13,10 @@ export default defineConfig({
           if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
             extType = 'img';
           }
-          return `assets/${extType}/[name]-[hash][extname]`;
+          return `/kcb7af3d2b823aassets/${extType}/[name]-[hash][extname]`;
         },
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: '/kcb7af3d2b823a/assets/[name]-[hash].js',
+        entryFileNames: '/kcb7af3d2b823a/assets/[name]-[hash].js',
       },
     },
   },
